@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/search_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginLeft="@dimen/x50"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/saomiao"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y40"
+            android:background="@mipmap/xuigai"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/x6"
+            android:text="扫描"/>
+    </LinearLayout>
+</LinearLayout>

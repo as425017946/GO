@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="go.app.mdb.android.go">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".mapplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 下载成功更新apk 服务 -->
+        <receiver android:name=".DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pd_searchActivity" />
+        <activity android:name=".Dd_searchActivity" />
+        <activity android:name=".wode.GaijiActivity" />
+        <activity android:name=".kucun.KuncunActivity" />
+        <activity android:name=".dingdan.ChuanjianActivity" />
+        <activity
+            android:name=".lixian.LixinaMainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".lixian.LixianLogoActivity" />
+        <activity android:name=".lixian.Lixianinfo_searchActivity" />
+        <activity android:name=".wode.Wode_lixian" />
+        <activity android:name=".lixian.EmptyActivity" />
+        <activity android:name=".wode.GaijiMoreActivity" />
+        <activity android:name=".lhy.Lihuoyuan_Activity" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".dingdan.ChuanjianActivity2" />
+        <activity android:name=".dingdan.GouwucheActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".dingdan.TiaoxuanActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".dingdan.TiaoxuanMoreActivity" />
+        <activity android:name=".dingdan.TiaoxuanMoreItemActivity" />
+        <activity android:name=".wode.XiugaiChuanActivity" />
+        <activity
+            android:name=".wode.ChaoshiActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".wode.ChaoshiMoreActivity"></activity>
+    </application>
+
+</manifest>

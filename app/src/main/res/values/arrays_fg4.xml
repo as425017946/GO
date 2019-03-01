@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fenji">
+        <item>一级客户</item>
+        <item>二级客户 </item>
+        <item>三级客户</item>
+        <item>四级客户</item>
+        <item>五级客户</item>
+    </string-array>
+</resources>

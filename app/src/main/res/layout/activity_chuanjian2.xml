@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="go.app.mdb.android.go.dingdan.ChuanjianActivity2"
+    android:orientation="vertical">
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/fenye_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_marginRight="@dimen/x4"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y11"
+            android:text="合作单位"/>
+        <AutoCompleteTextView
+            android:id="@+id/spinner_hzdw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y11"
+            android:layout_weight="1"
+            android:completionThreshold="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginLeft="@dimen/x50"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/search_ll2_chaxun"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y40"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@mipmap/xuigai"
+            android:layout_marginRight="@dimen/x6"
+            android:text="查询"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_hzdw"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">看家GO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_cjdd1">购物车模式一</string>
+    <string name="action_cjdd2">购物车模式二</string>
+    <string name="action_gwc">购物车</string>
+
+    <drawable name="clr_normal">#3492fb</drawable>
+    <drawable name="clr_pressed">#59a5fa</drawable>
+    <string name="app_chuantishi">请确认地址前仔细看清输入的新连接地址，一旦输入错误，APP将无法正常使用！</string>
+</resources>
